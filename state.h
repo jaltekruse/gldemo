@@ -83,19 +83,33 @@ void entity_animcallback(struct entity_t *entity){
     switch(entity->state)
     {
 
-		case STAND: set_entity_state(entity, STAND); break;
+		case STAND: 
+            //set_entity_state(entity, STAND);
+            break;
 
-		case CROUCH: set_entity_state(entity, CROUCH); break;
+		case CROUCH:
+            //set_entity_state(entity, CROUCH);
+            break;
 
-		case WALK: set_entity_state(entity, STAND); break;
+		case WALK:
+            //set_entity_state(entity, STAND);
+            break;
 
-		case RUN: set_entity_state(entity, STAND); break;
+		case RUN:
+            //set_entity_state(entity, STAND);
+            break;
 
-        case ROLL: set_entity_state(entity, STAND); break;
+        case ROLL:
+            set_entity_state(entity, STAND);
+            break;
 
-        case JUMP: set_entity_state(entity, FALL); break;
+        case JUMP:
+            set_entity_state(entity, FALL);
+            break;
 
-        case FALL: set_entity_state(entity, STAND); break;
+        case FALL:
+            set_entity_state(entity, STAND);
+            break;
     }
 }
 

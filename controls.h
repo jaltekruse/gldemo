@@ -23,6 +23,7 @@ void move_entity_stick(struct controller_data hold, struct entity_t* entity, cam
 
     if ( lx == 0 && ly == 0) {
         entity->horizontal_speed = 0;
+        set_entity_state(entity, STAND);
     }
 }
 
